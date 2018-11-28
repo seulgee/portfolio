@@ -86,29 +86,53 @@
 		</div>
 	</section>
 
-
 	<script>
-	$('.top').eq(0).click(function () {
-    			$('html, body').animate({
-        			scrollTop: $('.top-name').eq(0).offset().top
-    			}, 400);
-			});
+		//navigation
+
+	  	var nav = $("#navigation")
+  		var hamburger = $(".hamburger");
+  		hamburger.on("click", function(e) {
+			hamburger.toggleClass("is-active");
+			nav.find($("ul")).css({
+				"font-size": "30px"
+			})
+			nav.find($("a")).css({
+				"padding": "15px 0px 15px 0",
+				"line-height": "30px"
+			})
+			nav.toggle(250);
+    		$("#name").toggleClass('bg-color', 300, "easeOutSine");
+  		});
+
+		var y = window.matchMedia("(max-width: 414px)")
+		myFunction(y) // Call listener function at run time
+		y.addListener(myFunction) // Attach listener function on state changes
+
+		function myFunction(y) {
+    		if (y.matches){
+    			hamburger.show();
+    			nav.hide();
+
+    		} else {
+    			hamburger.hide();
+    			nav.show();
+    		}
+    	};
 	</script>
 
 	<script src="scripts/isotope.pkgd.min.js"></script>
-	<script>
+	<script type='text/javascript'>
 		var grid = $('.one').isotope({
 			// options
 			itemSelector: '.grid-item',
 			layoutMode: 'fitRows',
 			stagger: 30
 		});
-		
+
 		$(document).ready(function (){
 			$(".button").addClass('fontsize');
-		});
 
-		$('.filter-button-group').on( "click", '.cat', function() {
+		$('.filter-button-group').on('click', '.cat', function() {
   			var filterValue = $(this).attr('data-filter');
 			grid.isotope({ filter: filterValue });
 
@@ -198,38 +222,11 @@
 			$(this).addClass('active-1');
 		})
 
-		
-		//navigation
+		});
 
-	  	var nav = $("#navigation")
-  		var hamburger = $(".hamburger");
-  		hamburger.on("click", function(e) {
-			hamburger.toggleClass("is-active");
-			nav.find($("ul")).css({
-				"font-size": "30px"
-			})
-			nav.find($("a")).css({
-				"padding": "15px 0px 15px 0",
-				"line-height": "30px"
-			})
-			nav.toggle(250);
-    		$("#name").toggleClass('bg-color', 300, "easeOutSine");
-  		});
-
-		var y = window.matchMedia("(max-width: 414px)")
-		myFunction(y) // Call listener function at run time
-		y.addListener(myFunction) // Attach listener function on state changes
-
-		function myFunction(y) {
-    		if (y.matches){
-    			hamburger.show();
-    			nav.hide();
-
-    		} else {
-    			hamburger.hide();
-    			nav.show();
-    		}
-    	};
+		$(window).load(function (){
+			$('.grid-item').isotope('reLayout');
+		})
 		</script>
 
 	
