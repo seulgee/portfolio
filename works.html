@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Seulgee Lee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<div class="button-group-2 filter-button-group">
+		<div class="button-2"><p class="post" data-filter=".interaction">Interaction</p></div>
+		<div class="button-2"><p class="post" data-filter=".design">Design</p></div>
+		<div class="button-2"><p class="post" data-filter=".illustration">Illustration</p></div>
+	</div>
+	<section id="name" class="top-name">
+		<div class="left">
+			<h2 class="main-name"><a href="index.html">SEULGEE LEE</a></h2>
+		</div>
+	</section>
+	<section id="mainPage">
+		<div class="left">
+			<nav class="list">
+				<button class="hamburger hamburger--collapse" type="button" style="display:none">
+    				<span class="hamburger-box">
+      					<span class="hamburger-inner"></span>
+    				</span>
+  				</button>
+  				<div id="navigation" style="display:none">
+					<ul class="nav">
+						<li><a href="about.html">About</a></li>
+						<li><a href="resume/Seulgee Lee_Resume.pdf" target="_blank">Résumé</a></li>
+						<li><a href="sketches.html">For Fun</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div><div class="one">
+				<div class="grid-item interaction">
+					<a href="projects/css-typeface/index.html"><img src="images/Skyline.gif"></a>
+				</div>
+				<div class="grid-item design">
+					<a href="projects/word-cards/index.html"><img src="images/Wordcards Cover.jpg"></a>
+				</div>
+				<div class="grid-item design">
+					<a href="projects/film-fest-poster/index.html"><img src="images/Film Fest Poster Cover.jpg"></a>
+				</div>
+				<div class="grid-item illustration">
+					<a href="projects/dinner-set/index.html"><img src="images/Dinner Cover2.jpg"></a>
+				</div>
+				<div class="grid-item interaction">
+					<a href="projects/configurator/index.html"><img src="images/Configurator Cover.jpg"></a>
+				</div>
+				<div class="grid-item design">
+					<a href="projects/editorial/index.html"><img src="images/Editorial Cover.jpg"></a>
+				</div>
+				<div class="grid-item design">
+					<a href="projects/cahokia/index.html"><img src="images/Cahokia Cover.jpg"></a>
+				</div>
+				<div class="grid-item design">
+					<a href="projects/bodoni/index.html"><img src="images/Bodoni Cover.jpg"></a>
+				</div>
+			</div>
+
+	</section>
+	<section id="bottom">
+		<div class="bottom-end">
+			<div class="copyright">
+				<p>&#169; 2018 Seulgee Lee
+					<span class="contact-icon-row">
+						<a href="https://www.linkedin.com/in/seulgee-lee/" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="https://www.instagram.com/seulgitart/" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.behance.net/seulgeelee6f03" target="_blank"><i class="fab fa-behance-square"></i></a>
+					</span>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<script>
+	$('.top').eq(0).click(function () {
+    			$('html, body').animate({
+        			scrollTop: $('.top-name').eq(0).offset().top
+    			}, 400);
+			});
+	</script>
+
+	<script src="scripts/isotope.pkgd.min.js"></script>
+	<script>
+		var grid = $('.one').isotope({
+			// options
+			itemSelector: '.grid-item',
+			layoutMode: 'fitRows'
+		});
+
+		$('.filter-button-group').on( 'click', '.post', function() {
+  			var filterValue = $(this).attr('data-filter');
+			grid.isotope({ filter: filterValue });
+		});
+		
+		$(".button-group-2 .post").on('click', function(){
+			$(".button-group-2 .post").removeClass('active-1');
+			$(this).addClass('active-1');
+		})
+
+		//navigation
+
+		var nav = $("#navigation")
+  		var hamburger = $(".hamburger");
+  		hamburger.on("click", function(e) {
+			hamburger.toggleClass("is-active");
+			nav.find($("ul")).css({
+				"font-size": "30px"
+			})
+			nav.find($("a")).css({
+				"padding": "15px 0px 15px 0",
+				"line-height": "30px"
+			})
+			nav.toggle(250);
+    		$("#name").toggleClass('bg-color', 300, "easeOutSine");
+  		});
+
+		var y = window.matchMedia("(max-width: 414px)")
+		myFunction(y) // Call listener function at run time
+		y.addListener(myFunction) // Attach listener function on state changes
+
+		function myFunction(y) {
+    		if (y.matches){
+    			hamburger.show();
+    			nav.hide();
+
+    		} else {
+    			hamburger.hide();
+    			nav.show();
+    		}
+    	};
+
+	  </script>
+</body>
+
+</html>

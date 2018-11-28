@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Seulgee Lee</title>
+	<meta name="viewport" content="width=device-width">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section id="name" class="top-name">
+		<div class="left">
+			<h2 class="main-name"><a href="index.html">SEULGEE LEE</a></h2></div>
+	</section>
+	<section id="mainPage">
+		<div class="left">
+			<nav class="list">
+				<button class="hamburger hamburger--collapse" type="button" style="display:none">
+    				<span class="hamburger-box">
+      					<span class="hamburger-inner"></span>
+    				</span>
+  				</button>
+  				<div id="navigation" style="display:none">
+					<ul class="nav">
+						<li><a href="about.html">About</a></li>
+						<li><a href="resume/Seulgee Lee_Resume.pdf" target="_blank">Résumé</a></li>
+						<li><a href="../../works.html">Works</a></li>
+						<li><a href="sketches.html">For Fun</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div><div class="detail-shots">
+				<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+				<div class="elfsight-app-669f512a-3632-41ae-a34e-04fc0ea17853"></div>
+			</div>
+	</section>
+	<section id="bottom">
+		<div class="bottom-end">
+			<div class="copyright">
+				<p>&#169; 2018 Seulgee Lee
+					<span class="contact-icon-row">
+						<a href="https://www.linkedin.com/in/seulgee-lee/" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="https://www.instagram.com/seulgitart/" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://www.behance.net/seulgeelee6f03" target="_blank"><i class="fab fa-behance-square"></i></a>
+					</span>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<div class="back-to-top">
+			<nav class="top">
+				<ul>
+					<li><a href="#name"><i class="fas fa-chevron-circle-up"></i></a></li>
+				</ul>
+			</nav>
+		</div>	
+
+	<script>
+		$('.top').eq(0).click(function () {
+    			$('html, body').animate({
+        			scrollTop: $('.top-name').eq(0).offset().top
+    			}, 400);
+			});
+
+		$(document).ready(function (){
+			$(".fun").css("color", "#f7ce68")
+		});
+
+		//navigation
+
+		var nav = $("#navigation")
+  		var hamburger = $(".hamburger");
+  		hamburger.on("click", function(e) {
+			hamburger.toggleClass("is-active");
+			nav.find($("ul")).css({
+				"font-size": "30px"
+			})
+			nav.find($("a")).css({
+				"padding": "15px 0px 15px 0",
+				"line-height": "30px"
+			})
+			nav.toggle(250);
+    		$("#name").toggleClass('bg-color', 300, "easeOutSine");
+  		});
+
+		var y = window.matchMedia("(max-width: 414px)")
+		myFunction(y) // Call listener function at run time
+		y.addListener(myFunction) // Attach listener function on state changes
+
+		function myFunction(y) {
+    		if (y.matches){
+    			hamburger.show();
+    			nav.hide();
+
+    		} else {
+    			hamburger.hide();
+    			nav.show();
+    		}
+    	};
+	</script>
+</body>
+
+</html>
