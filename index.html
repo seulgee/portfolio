@@ -17,12 +17,12 @@
 </head>
 
 <body>
-	<div class="button-group filter-button-group">
-		<div class="button"><p class="cat" data-filter=".interaction">Interaction</p></div>
-		<div class="button"><p class="cat" data-filter=".design">Design</p></div>
-		<div class="button"><p class="cat" data-filter=".illustration">Illustration</p></div>
+	<div class="button-group-2 filter-button-group">
+		<div class="button-2"><p class="post" data-filter=".interaction">Interaction</p></div>
+		<div class="button-2"><p class="post" data-filter=".design">Design</p></div>
+		<div class="button-2"><p class="post" data-filter=".illustration">Illustration</p></div>
 	</div>
-	<div class="overlay"></div>
+	<!-- <div class="overlay"></div> -->
 	<section id="name" class="top-name">
 		<div class="left">
 			<h2 class="main-name"><a href="index.html">SEULGEE LEE</a></h2>
@@ -122,6 +122,7 @@
 
 	<script src="scripts/isotope.pkgd.min.js"></script>
 	<script type='text/javascript'>
+	$(document).ready(function (){
 		var grid = $('.one').isotope({
 			// options
 			itemSelector: '.grid-item',
@@ -129,96 +130,94 @@
 			stagger: 30
 		});
 
-		$(document).ready(function (){
-			$(".button").addClass('fontsize');
+		
+		// $(".button").addClass('fontsize');
 
-		$('.filter-button-group').on('click', '.cat', function() {
+		$('.filter-button-group').on('click', '.post', function() {
   			var filterValue = $(this).attr('data-filter');
 			grid.isotope({ filter: filterValue });
 
-			$(".overlay").fadeOut(200, "linear");
+		})
 
-			$(window).scrollTop(0).resize(function () {
-                var width = $(window).width();
-                if (width >= 768) {
-                    $(".cat").css({
-					"width": "100.219px",
-					"margin-right": "0",
-					"padding": "0",
-					"line-height": "1.5em",
-					"font-size": "17px",
-					"text-align": "left",
-					"font-weight": "400"
-				}, 300)
+			// $(window).scrollTop(0).resize(function () {
+            //     var width = $(window).width();
+            //     if (width >= 768) {
+            //         $(".cat").css({
+			// 		"width": "100.219px",
+			// 		"margin-right": "0",
+			// 		"padding": "0",
+			// 		"line-height": "1.5em",
+			// 		"font-size": "17px",
+			// 		"text-align": "left",
+			// 		"font-weight": "400"
+			// 	}, 300)
 
-				$(".button").animate({
-					margin: "0",
-					textAlign: "left",
-					width: "100.219px"
-				}, 300)
+			// 	$(".button").animate({
+			// 		margin: "0",
+			// 		textAlign: "left",
+			// 		width: "100.219px"
+			// 	}, 300)
 
-				$(".button-group").animate({
-					width: "100.219px",
-					textAlign: "left",
-					left: "150px",
-					top: "369px",
-					marginLeft: "4em"
-				}, 300);
-                } else if (width >= 414 && width <= 768) {
-                    $(".cat").css({
-					"width": "100.219px",
-					"margin-right": "0",
-					"padding": "0",
-					"line-height": "1.5em",
-					"font-size": "17px",
-					"text-align": "left",
-					"font-weight": "400"
-				}, 300)
+			// 	$(".button-group").animate({
+			// 		width: "100.219px",
+			// 		textAlign: "left",
+			// 		left: "150px",
+			// 		top: "369px",
+			// 		marginLeft: "4em"
+			// 	}, 300);
+            //     } else if (width >= 414 && width <= 768) {
+            //         $(".cat").css({
+			// 		"width": "100.219px",
+			// 		"margin-right": "0",
+			// 		"padding": "0",
+			// 		"line-height": "1.5em",
+			// 		"font-size": "17px",
+			// 		"text-align": "left",
+			// 		"font-weight": "400"
+			// 	}, 300)
 
-				$(".button").animate({
-					margin: "0",
-					textAlign: "left",
-					width: "100.219px"
-				}, 300)
+			// 	$(".button").animate({
+			// 		margin: "0",
+			// 		textAlign: "left",
+			// 		width: "100.219px"
+			// 	}, 300)
 
-				$(".button-group").addClass('display').animate({
-					width: "100.219px",
-					textAlign: "left",
-					left: "188px",
-					top: "105vh",
-					height: "100px",
-					margin: "0"
-				}, 300);
-                } else if (width >= 0 && width <= 414) {
-                    $(".cat").css({
-					"width": "100.219px",
-					"margin-right": "0",
-					"padding": "0",
-					"line-height": "1.5em",
-					"font-size": "17px",
-					"text-align": "left",
-					"font-weight": "400"
-				}, 300)
+			// 	$(".button-group").addClass('display').animate({
+			// 		width: "100.219px",
+			// 		textAlign: "left",
+			// 		left: "188px",
+			// 		top: "105vh",
+			// 		height: "100px",
+			// 		margin: "0"
+			// 	}, 300);
+            //     } else if (width >= 0 && width <= 414) {
+            //         $(".cat").css({
+			// 		"width": "100.219px",
+			// 		"margin-right": "0",
+			// 		"padding": "0",
+			// 		"line-height": "1.5em",
+			// 		"font-size": "17px",
+			// 		"text-align": "left",
+			// 		"font-weight": "400"
+			// 	}, 300)
 
-				$(".button").animate({
-					margin: "0",
-					textAlign: "left",
-					width: "100.219px"
-				}, 300)
+			// 	$(".button").animate({
+			// 		margin: "0",
+			// 		textAlign: "left",
+			// 		width: "100.219px"
+			// 	}, 300)
 
-				$(".button-group").addClass('display').animate({
-					height: "100px",
-					margin: "0",
-					left: "170px",
-					top: "103vh"
-				}, 300);
-                }
-            })
+			// 	$(".button-group").addClass('display').animate({
+			// 		height: "100px",
+			// 		margin: "0",
+			// 		left: "170px",
+			// 		top: "103vh"
+			// 	}, 300);
+            //     }
+            // })
 
-		});
-
-		$(".button-group .cat").on('click', function(){
-			$(".button-group .cat").removeClass('active-1');
+		$(".button-group .post").on('click', function(){
+			$(".button-group .post").removeClass('active-1');
 			$(this).addClass('active-1');
 		})
 
