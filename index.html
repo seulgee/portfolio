@@ -148,6 +148,10 @@
   			var filterValue = $(this).attr('data-filter');
 			grid.isotope({ filter: filterValue });
 
+			$('html, body').animate({
+				scrollTop: 0
+			},200)
+
 		})
 
 			// $(window).scrollTop(0).resize(function () {
