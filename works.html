@@ -15,7 +15,7 @@
 
 <body>
 	<div class="button-group-2 filter-button-group">
-		<div class="button-2"><p class="post" data-filter=".interaction">Interaction</p></div>
+		<div class="button-2"><p class="post" data-filter=".interaction">Motion + Interaction</p></div>
 		<div class="button-2"><p class="post" data-filter=".design">Design</p></div>
 		<div class="button-2"><p class="post" data-filter=".illustration">Illustration</p></div>
 	</div>
@@ -43,6 +43,9 @@
 		</div><div class="one">
 				<div class="grid-item interaction">
 					<a href="projects/css-typeface/index.html"><img src="images/Skyline.gif"></a>
+				</div>
+				<div class="grid-item interaction">
+					<a href="projects/apple/index.html"><img src="images/apple_.gif"></a>
 				</div>
 				<div class="grid-item design">
 					<a href="projects/word-cards/index.html"><img src="images/Wordcards Cover.jpg"></a>
@@ -92,6 +95,7 @@
 
 	<script src="scripts/isotope.pkgd.min.js"></script>
 	<script>
+	$(document).ready(function (){
 		var grid = $('.one').isotope({
 			// options
 			itemSelector: '.grid-item',
@@ -139,6 +143,7 @@
     			nav.show();
     		}
     	};
+	});
 
 	  </script>
 </body>

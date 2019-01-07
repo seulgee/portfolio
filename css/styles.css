@@ -8,6 +8,10 @@
 	color: black;
 }
 
+.filterCl {
+	display: none;
+}
+
 .overlay {
 	z-index: 22;
 	position: fixed;
@@ -155,6 +159,11 @@ body #name, .left nav {
 
 /*/////////////////////////////////////////*/
 
+h3 {
+	font-weight: 700;
+	color: #8c8c8c;
+	margin-top: 40px;
+}
 
 
 
@@ -220,6 +229,24 @@ ul {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+}
+
+.vid-line {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+}
+
+.vid-line-2 {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+#vid1, #vid2, #vid3 {
+	width: 100%;
 }
 
 .grid-item {
@@ -437,7 +464,6 @@ ul {
 .detail-shots h1 {
 	font-size: 20pt;
 	font-weight: 400;
-	text-transform: capitalize;
 	line-height: 22pt;
 	margin-top: 0;
 	margin-bottom: 1em;
@@ -542,6 +568,12 @@ ul {
 .detail-shots p .donut-invision {
 	font-style: italic;
 
+}
+
+/*///////////////////////////////////////////// css-typeface */
+
+.responsive-small {
+	display: none;
 }
 
 
@@ -778,6 +810,12 @@ ul {
 		padding-bottom: 0;
 	}
 
+	.vid-line, .vid-line-2 {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+
 	.detail-shots {
 		width: 100%;
 	}
@@ -786,7 +824,7 @@ ul {
 		padding: 0;
 	}
 
-	.detail-shots h1, .detail-shots h2, .detail-shots p, .contact-icon-row a {
+	.detail-shots h1, .detail-shots h2, .detail-shots p, .contact-icon-row a, h3 {
 		width: 90%;
 		margin-left: 5%;
 	}
@@ -903,6 +941,14 @@ ul {
 	.button-group-2 {
 		top: 82vh;
 		left: -58px;
+	}
+
+	.responsive-large {
+		display: none;
+	}
+
+	.responsive-small {
+		display: block;
 	}
 }
 
