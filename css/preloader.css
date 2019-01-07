@@ -1,0 +1,85 @@
+#loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+#loader-background {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+}
+
+#loader {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #f7ce68;
+    z-index: 1001;
+    margin: auto;
+    position: relative;
+    top: 45%;
+
+    animation: loading 3s infinite;
+    -webkit-animation: loading 2.3s infinite;
+    -moz-animation: loading 2.3s infinite;
+    -ms-animation: loading 2.3s infinite;
+    -o-animation: loading 2.3s infinite;
+}
+
+@keyframes loading {
+    0% {transform: skewY(0deg) rotate(0deg)}
+    25% {transform: skewY(30deg) rotate(10deg)}
+    44% {transform: skewY(-10deg)}
+    60% {transform: skewY(20deg)}
+    100% {transform: skewY(0deg)}
+}
+
+@-webkit-keyframes loading {
+    0% {-webkit-transform: skewY(0deg) rotate(0deg)}
+    25% {-webkit-transform: skewY(30deg) rotate(10deg)}
+    44% {-webkit-transform: skewY(-10deg)}
+    60% {-webkit-transform: skewY(20deg)}
+    100% {-webkit-transform: skewY(0deg)}
+}
+
+@-moz-keyframes loading {
+    0% {-moz-transform: skewY(0deg) rotate(0deg)}
+    25% {-moz-transform: skewY(30deg) rotate(10deg)}
+    44% {-moz-transform: skewY(-10deg)}
+    60% {-moz-transform: skewY(20deg)}
+    100% {-moz-transform: skewY(0deg)}
+}
+
+@-ms-keyframes loading {
+    0% {-ms-transform: skewY(0deg) rotate(0deg)}
+    25% {-ms-transform: skewY(30deg) rotate(10deg)}
+    44% {-ms-transform: skewY(-10deg)}
+    60% {-ms-transform: skewY(20deg)}
+    100% {-ms-transform: skewY(0deg)}
+}
+
+@-o-keyframes loading {
+    0% {-o-transform: skewY(0deg) rotate(0deg)}
+    25% {-o-transform: skewY(30deg) rotate(10deg)}
+    44% {-o-transform: skewY(-10deg)}
+    60% {-o-transform: skewY(20deg)}
+    100% {-o-transform: skewY(0deg)}
+}
+
+/* Loaded */
+.loaded #loader-wrapper {
+    visibility: hidden;
+    -webkit-transition: all 0.3s 1s ease-out;  
+            transition: all 0.3s 1s ease-out;
+}
+
+.loaded #loader, .loaded #loader-background {
+    opacity: 0;
+    -webkit-transition: all 0.3s 1s ease-out;  
+            transition: all 0.3s 1s ease-out;
+}
