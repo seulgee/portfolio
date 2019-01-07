@@ -6,6 +6,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/preloader.css">
 	<link rel="stylesheet" type="text/css" href="css/hamburgers.css">
 	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -18,6 +19,12 @@
 </head>
 
 <body>
+	<div id="loader-wrapper">
+		<div id="loader-background">
+			<div id="loader"></div>
+		</div>
+	</div>
+
 	<div class="button-group-2 filter-button-group">
 		<div class="button-2"><p class="post" data-filter=".interaction">Motion + Interaction</p></div>
 		<div class="button-2"><p class="post" data-filter=".design">Design</p></div>
@@ -91,6 +98,15 @@
 	</section>
 
 	<script>
+		//preloader
+		$(document).ready(function() {
+	
+			setTimeout(function(){
+				$('body').addClass('loaded');
+			}, 800);
+	
+		});
+
 		//navigation
 
 	  	var nav = $("#navigation")
