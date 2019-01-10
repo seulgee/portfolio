@@ -22,20 +22,6 @@
 	transition: .3s;
 }
 
-.button-group {
-	z-index: 23;
-	position: fixed;
-	display: block;
-	margin: auto;
-	top: 50vh;
-	left: 50%;
-	transform: translate(-150px,-149px);
-	-webkit-transform: translateX(-150px, -149px);
-	-moz-transform: translateX(-150px, -149px);
-	-ms-transform: translateX(-150px, -149px);
-	opacity: 1;
-}
-
 .button-group-2 {
 	z-index: 23;
 	position: fixed;
@@ -44,8 +30,9 @@
 	opacity: 1;
 	width: 100.219px;
 	left: -16px;
-	top: 220px;
 	margin-left: 5em;
+	height: 100vh;
+	padding-top: 220px;
 }
 
 .button {
@@ -691,8 +678,10 @@ ul {
 	}
 
 	.button-group-2 {
-		top: 84vh;
+		height: auto;
+		bottom: 8%;
 		left: -41.5px;
+		padding-top: 0;
 	}
 }
 
@@ -939,7 +928,6 @@ ul {
 	}
 
 	.button-group-2 {
-		top: 82vh;
 		left: -58px;
 	}
 
