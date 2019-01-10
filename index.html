@@ -104,13 +104,17 @@
 
 	<script>
 		//preloader
-		$(document).ready(function() {
+		// $(document).ready(function() {
 	
-			setTimeout(function(){
-				$('body').addClass('loaded');
-			}, 2750);
+		// 	setTimeout(function(){
+		// 		$('body').addClass('loaded');
+		// 	}, 2750);
 	
-		});
+		// });
+		
+		$(window).on('load', function() {
+     		$('#loader-wrapper').fadeOut(300,'swing');
+  		});
 		
 		//scroll to top
 
