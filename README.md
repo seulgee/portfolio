@@ -1,1 +1,1 @@
-# portfolio_
+# Seulgee Lee's Design Portfolio.
