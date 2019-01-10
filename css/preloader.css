@@ -22,9 +22,8 @@
     z-index: 1001;
     margin: auto;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-18px);
 
     animation: loading 3s infinite;
     -webkit-animation: loading 2.3s infinite;
@@ -34,43 +33,43 @@
 }
 
 @keyframes loading {
-    0% {transform: skewY(0deg) rotate(0deg)}
-    25% {transform: skewY(-30deg) rotate(10deg)}
-    44% {transform: skewY(10deg)}
-    60% {transform: skewY(-20deg)}
-    100% {transform: skewY(0deg)}
+    0% {transform: translate(-25px, -18px) skewY(0deg) rotate(0deg)}
+    25% {transform: translate(-18px, -18px) skewY(-30deg) rotate(10deg)}
+    44% {transform: translate(-18px, -18px) skewY(10deg)}
+    60% {transform: translate(-18px, -18px) skewY(-20deg)}
+    100% {transform: translate(-25px, -18px) skewY(0deg)}
 }
 
 @-webkit-keyframes loading {
-    0% {-webkit-transform: skewY(0deg) rotate(0deg)}
-    25% {-webkit-transform: skewY(-30deg) rotate(10deg)}
-    44% {-webkit-transform: skewY(10deg)}
-    60% {-webkit-transform: skewY(-20deg)}
-    100% {-webkit-transform: skewY(0deg)}
+    0% {-webkit-transform: translate(-25px, -18px) skewY(0deg) rotate(0deg)}
+    25% {-webkit-transform: translate(-18px, -18px) skewY(-30deg) rotate(10deg)}
+    44% {-webkit-transform: translate(-18px, -18px) skewY(10deg)}
+    60% {-webkit-transform: translate(-18px, -18px) skewY(-20deg)}
+    100% {-webkit-transform: translate(-25px, -18px) skewY(0deg)}
 }
 
 @-moz-keyframes loading {
-    0% {-moz-transform: skewY(0deg) rotate(0deg)}
-    25% {-moz-transform: skewY(-30deg) rotate(10deg)}
-    44% {-moz-transform: skewY(10deg)}
-    60% {-moz-transform: skewY(-20deg)}
-    100% {-moz-transform: skewY(0deg)}
+    0% {-moz-transform: translate(-25px, -18px) skewY(0deg) rotate(0deg)}
+    25% {-moz-transform: translate(-18px, -18px) skewY(-30deg) rotate(10deg)}
+    44% {-moz-transform: translate(-18px, -18px) skewY(10deg)}
+    60% {-moz-transform: translate(-18px, -18px) skewY(-20deg)}
+    100% {-moz-transform: translate(-25px, -18px) skewY(0deg)}
 }
 
 @-ms-keyframes loading {
-    0% {-ms-transform: skewY(0deg) rotate(0deg)}
-    25% {-ms-transform: skewY(-30deg) rotate(10deg)}
-    44% {-ms-transform: skewY(10deg)}
-    60% {-ms-transform: skewY(-20deg)}
-    100% {-ms-transform: skewY(0deg)}
+    0% {-ms-transform: translate(-25px, -18px) skewY(0deg) rotate(0deg)}
+    25% {-ms-transform: translate(-18px, -18px) skewY(-30deg) rotate(10deg)}
+    44% {-ms-transform: translate(-18px, -18px) skewY(10deg)}
+    60% {-ms-transform: translate(-18px, -18px) skewY(-20deg)}
+    100% {-ms-transform: translate(-25px, -18px) skewY(0deg)}
 }
 
 @-o-keyframes loading {
-    0% {-o-transform: skewY(0deg) rotate(0deg)}
-    25% {-o-transform: skewY(-30deg) rotate(10deg)}
-    44% {-o-transform: skewY(10deg)}
-    60% {-o-transform: skewY(-20deg)}
-    100% {-o-transform: skewY(0deg)}
+    0% {-o-transform: translate(-25px, -18px) skewY(0deg) rotate(0deg)}
+    25% {-o-transform: translate(-18px, -18px) skewY(-30deg) rotate(10deg)}
+    44% {-o-transform: translate(-18px, -18px) skewY(10deg)}
+    60% {-o-transform: translate(-18px, -18px) skewY(-20deg)}
+    100% {-o-transform: translate(-25px, -18px) skewY(0deg)}
 }
 
 #loader-back {
@@ -81,9 +80,8 @@
     z-index: 1002;
     margin: auto;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
-    transform: translateX(-18px);
 
     animation: loading-back-back 3s infinite;
     -webkit-animation: loading-back 2.3s infinite;
@@ -93,43 +91,43 @@
 }
 
 @keyframes loading-back {
-    0% {transform: skewY(0deg) rotate(0deg)}
-    25% {transform: skewY(30deg) rotate(10deg)}
-    44% {transform: skewY(-10deg)}
-    60% {transform: skewY(20deg)}
-    100% {transform: skewY(0deg)}
+    0% {transform: translate(-11px, -18px) skewY(0deg) rotate(0deg)}
+    25% {transform: translate(-18px, -18px) skewY(30deg) rotate(10deg)}
+    44% {transform: translate(-18px, -18px) skewY(-10deg)}
+    60% {transform: translate(-18px, -18px) skewY(20deg)}
+    100% {transform: translate(-11px, -18px) skewY(0deg)}
 }
 
 @-webkit-keyframes loading-back {
-    0% {-webkit-transform: skewY(0deg) rotate(0deg)}
-    25% {-webkit-transform: skewY(30deg) rotate(10deg)}
-    44% {-webkit-transform: skewY(-10deg)}
-    60% {-webkit-transform: skewY(20deg)}
-    100% {-webkit-transform: skewY(0deg)}
+    0% {-webkit-transform: translate(-11px, -18px) skewY(0deg) rotate(0deg)}
+    25% {-webkit-transform: translate(-18px, -18px) skewY(30deg) rotate(10deg)}
+    44% {-webkit-transform: translate(-18px, -18px) skewY(-10deg)}
+    60% {-webkit-transform: translate(-18px, -18px) skewY(20deg)}
+    100% {-webkit-transform: translate(-11px, -18px) skewY(0deg)}
 }
 
 @-moz-keyframes loading-back {
-    0% {-moz-transform: skewY(0deg) rotate(0deg)}
-    25% {-moz-transform: skewY(30deg) rotate(10deg)}
-    44% {-moz-transform: skewY(-10deg)}
-    60% {-moz-transform: skewY(20deg)}
-    100% {-moz-transform: skewY(0deg)}
+    0% {-moz-transform: translate(-11px, -18px) skewY(0deg) rotate(0deg)}
+    25% {-moz-transform: translate(-18px, -18px) skewY(30deg) rotate(10deg)}
+    44% {-moz-transform: translate(-18px, -18px) skewY(-10deg)}
+    60% {-moz-transform: translate(-18px, -18px) skewY(20deg)}
+    100% {-moz-transform: translate(-11px, -18px) skewY(0deg)}
 }
 
 @-ms-keyframes loading-back {
-    0% {-ms-transform: skewY(0deg) rotate(0deg)}
-    25% {-ms-transform: skewY(30deg) rotate(10deg)}
-    44% {-ms-transform: skewY(-10deg)}
-    60% {-ms-transform: skewY(20deg)}
-    100% {-ms-transform: skewY(0deg)}
+    0% {-ms-transform: translate(-11px, -18px) skewY(0deg) rotate(0deg)}
+    25% {-ms-transform: translate(-18px, -18px) skewY(30deg) rotate(10deg)}
+    44% {-ms-transform: translate(-18px, -18px) skewY(-10deg)}
+    60% {-ms-transform: translate(-18px, -18px) skewY(20deg)}
+    100% {-ms-transform: translate(-11px, -18px) skewY(0deg)}
 }
 
 @-o-keyframes loading-back {
-    0% {-o-transform: skewY(0deg) rotate(0deg)}
-    25% {-o-transform: skewY(30deg) rotate(10deg)}
-    44% {-o-transform: skewY(-10deg)}
-    60% {-o-transform: skewY(20deg)}
-    100% {-o-transform: skewY(0deg)}
+    0% {-o-transform: translate(-11px, -18px) skewY(0deg) rotate(0deg)}
+    25% {-o-transform: translate(-18px, -18px) skewY(30deg) rotate(10deg)}
+    44% {-o-transform: translate(-18px, -18px) skewY(-10deg)}
+    60% {-o-transform: translate(-18px, -18px) skewY(20deg)}
+    100% {-o-transform: translate(-11px, -18px) skewY(0deg)}
 }
 
 
