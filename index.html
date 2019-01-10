@@ -110,6 +110,14 @@
 			}, 2750);
 	
 		});
+		
+		//scroll to top
+
+		$('.top, .to-top').click(function () {
+    			$('html, body').animate({
+        			scrollTop: $('.top-name').eq(0).offset().top
+    			}, 400);
+			});
 
 		//navigation
 
