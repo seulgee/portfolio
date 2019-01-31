@@ -35,17 +35,6 @@
 	padding-top: 220px;
 }
 
-.button {
-	display: block;
-	width: 300px;
-	margin: auto;
-	font-family: 'Catamaran', sans-serif;
-	border: 0;
-	text-align: center;
-	cursor: pointer;
-	margin: 10px 0 10px 0;
-}
-
 .button-2 {
 	display: block;
 	margin: auto;
@@ -767,6 +756,10 @@ ul {
 		float: none;
 		text-align: center;
 		z-index: 50;
+	}
+
+	.post {
+		color: #000000;
 	}
 
 
