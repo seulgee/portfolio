@@ -399,7 +399,6 @@ ul {
 .contact-icon-row {
 	display: inline-block;
 	vertical-align: top;
-	width: 120px;
 	text-align: center;
 	position: relative;
 }
@@ -881,6 +880,16 @@ ul {
 		margin-left: 0;
 		padding-left: 3px;
 	}
+
+	.contact-icon-row a:last-child {
+		padding-right:0;
+	}
+
+	.contact-icon-row a:first-child {
+		padding-left: 10px;
+	}
+
+
 
 	.contact-icon {
 		padding-right: 3px;
