@@ -12,6 +12,61 @@
 	display: none;
 }
 
+.text-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 98.5%;
+	width: 98%;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: #000000;
+  }
+
+.grid-item:hover .text-overlay {
+	opacity: 1;
+  }
+  
+.text {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+  }
+
+.text-title {
+	font-size: 22px;
+	font-weight: 300;
+	display: block;
+	position: relative;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	line-height: 25px;
+}
+
+.text-caption {
+	font-size: 13px;
+	margin-top: 10px;
+	display: block;
+	position: relative;
+	width: 100%;
+	color: #8c8c8c;
+}
+
 .overlay {
 	z-index: 22;
 	position: fixed;
@@ -133,7 +188,7 @@ body #name, .left nav {
 	display: none;
 }
 
-/*/////////////////////////////////////////*/
+/*///////////////////////////////////////// bike-finder */
 
 h3 {
 	font-weight: 500;
@@ -262,10 +317,6 @@ ul {
 	padding-bottom: 1.5%;
 	transition: .4s;
 	width: 100%;
-}
-
-.one img:hover {
-	opacity: .3;
 }
 
 .detail-shots {
@@ -456,7 +507,18 @@ ul {
 	color: white;
 }
 
+/*///////////////////////////////////////////// capstone blog */
 
+h5 {
+	margin-top: 100px;
+	margin-bottom: 5px;
+	font-weight: 600;
+	border-bottom: 0.1px solid rgb(80, 80, 80);
+	padding-bottom: 3px;
+}
+ h5:first-of-type {
+	 margin-top: 30px;
+ }
 
 /*///////////////////////////////////////////// editorial page */
 
@@ -574,9 +636,6 @@ ul {
 .responsive-small {
 	display: none;
 }
-
-/*///////////////////////////////////////////// bike-finder */
-
 
 /*//////////////////////////////////////////// fontsinuse */
 
@@ -831,7 +890,7 @@ ul {
 		padding: 0;
 	}
 
-	.detail-shots h1, .detail-shots h2, .detail-shots p, .contact-icon-row a, h3, h4 {
+	.detail-shots h1, .detail-shots h2, .detail-shots p, .contact-icon-row a, h3, h4, h5 {
 		width: 90%;
 		margin-left: 5%;
 	}
@@ -889,8 +948,6 @@ ul {
 	.contact-icon-row a:first-child {
 		padding-left: 10px;
 	}
-
-
 
 	.contact-icon {
 		padding-right: 3px;
@@ -965,6 +1022,11 @@ ul {
 
 	.responsive-small {
 		display: block;
+	}
+
+	.text-overlay {
+		width: 100%;
+		height: 100%;
 	}
 }
 
