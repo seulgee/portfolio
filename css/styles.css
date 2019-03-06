@@ -18,8 +18,8 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 98.5%;
-	width: 98%;
+	height: 96%;
+	width: 96%;
 	opacity: 0;
 	transition: .3s ease;
 	background-color: #000000;
@@ -314,8 +314,8 @@ ul {
 
 .one img {
 	margin: 0;
-	padding-right: 2%;
-	padding-bottom: 1.5%;
+	padding-right: 4%;
+	padding-bottom: 4%;
 	transition: .4s;
 	width: 100%;
 }
