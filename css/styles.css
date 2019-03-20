@@ -916,6 +916,8 @@ h5 {
 
 	.detail-shots p {
 		margin-top: 30px;
+		font-size: 10.5pt;
+		line-height: 1.7em;
 	}
 
 	.detail-shots .fontsinuse p {
