@@ -1,17 +1,13 @@
-$(document).ready(function (){
+$(window).scroll(function() {
 
-function resizeHeaderOnScroll() {
-  const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-  shrinkOn = 200,
-  headerEl = document.getElementById('js-header');
-  
-  if (distanceY > shrinkOn) {
-    headerEl.classList.add("smaller");
-  } else {
-    headerEl.classList.remove("smaller");
-  }
-}
-
-window.addEventListener('scroll', resizeHeaderOnScroll);
-
+  var upArrow = $('#up-arrow')
+  if ($(this).scrollTop()>600)
+   {
+      upArrow.fadeIn(300);
+      console.log('working')
+   }
+  else
+   {
+    upArrow.fadeOut(300);
+   }
 });

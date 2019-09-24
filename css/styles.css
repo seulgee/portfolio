@@ -885,10 +885,16 @@ h5 {
 
 	.grid-item {
 		width: 100%;
+		margin: auto;
 		text-align: center;
 		padding-left: 0;
 		padding-right: 0;
 		padding-bottom: 0;
+	}
+
+	.grid-item img {
+		width: 80%;
+		margin-bottom: 10%;
 	}
 
 	.vid-line, .vid-line-2 {
@@ -1006,13 +1012,11 @@ h5 {
 		margin: auto;
 		margin-top: 20px;
 		text-align: center;
-		/* background: #000000; */
+		font-family: 'Catamaran', 'sans-serif';
+		font-size: 14px;
 		color: #8c8c8c;
-		font-weight: 400;
+		font-weight: 300;
 		padding: 10px 0px 10px 0px;
-		border-color: #8c8c8c;
-		border-width: 1px 0px 1px 0px;
-		border-style: solid;
 	}
 
 	.to-top a:link {
