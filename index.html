@@ -17,6 +17,7 @@
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -28,6 +29,12 @@
 	</div>
 
 	<div class="button-group-2 filter-button-group">
+		<div class="button-2"><p class="post all" data-filter=".all">All</p></div>
+		<div class="button-2"><p class="post" data-filter=".interaction">Interaction</p></div>
+		<div class="button-2"><p class="post" data-filter=".design">Print</p></div>
+		<div class="button-2"><p class="post" data-filter=".other">Other</p></div>
+	</div>
+	<div class="button-group-mobile filter-button-group">
 		<div class="button-2"><p class="post all" data-filter=".all">All</p></div>
 		<div class="button-2"><p class="post" data-filter=".interaction">Interaction</p></div>
 		<div class="button-2"><p class="post" data-filter=".design">Print</p></div>
@@ -305,6 +312,12 @@
 			$(".button-group-2 .post").removeClass('active-1');
 			$(this).addClass('active-1');
 		})
+
+		$(".button-group-mobile .post").on('click', function(){
+			$(".button-group-mobile .post").removeClass('active-1');
+			$(this).addClass('active-1');
+		})
+
 
 		});
 		</script>

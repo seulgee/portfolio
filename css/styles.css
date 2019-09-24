@@ -100,6 +100,10 @@
 	text-align: left;
 }
 
+.button-group-mobile {
+	display: none;
+}
+
 .post {
 	line-height: 1.5em;
 	color: #787878;
@@ -605,6 +609,7 @@ h5 {
 }
 
 
+
 /*///////////////////////////////////////////// configurator */
 
 .detail-shots .donut {
@@ -776,8 +781,9 @@ h5 {
 @media only screen and (max-width:414px) {
 	body {
 		height: 100vh;
+		background-color: #fafafa;
 	}
-
+	
 	#name .left h2{
 		margin-top: .2em;
 		font-size: 20pt;
@@ -893,9 +899,39 @@ h5 {
 	}
 
 	.grid-item img {
-		width: 80%;
-		margin-bottom: 10%;
+		margin-bottom: 15%;
 	}
+
+	.button-group-2 {
+		display: none;
+	}
+
+	.button-group-mobile {
+		display: block;
+		z-index: 20;
+		position: fixed;
+		margin: auto;
+		width: 100%;
+		top: 80px;
+		left: 0;
+		margin-left: 5%;
+	}
+
+	.button-2 {
+		display: inline-block;
+		margin: auto;
+		font-family: 'Catamaran', sans-serif;
+		border: 0;
+		cursor: pointer;
+		margin-right: 0;
+		text-align: center;
+		padding-right: 10px;
+	}
+
+	.button-2 p {
+		color: #8c8c8c;
+	}
+
 
 	.vid-line, .vid-line-2 {
 		position: relative;
