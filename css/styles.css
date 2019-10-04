@@ -1,10 +1,10 @@
 ::selection {
-	background-color: #f7ce68;
+	background-color: #23c0b6;
 	color: black;
 }
 
 ::-moz-selection {
-	background-color: #f7ce68;
+	background-color: #23c0b6;
 	color: black;
 }
 
@@ -114,7 +114,7 @@
 }
 
 p.active-1 {
-	color: #f7ce68 !important;
+	color: #23c0b6 !important;
 }
 
 .fontsize {
@@ -134,7 +134,7 @@ p.active-1 {
 }
 
 .button p:hover, .button-2 p:hover {
-	color: #f7ce68;
+	color: #23c0b6;
 }
 
 body, .detail-shots {
@@ -260,7 +260,7 @@ ul {
 }
 
 .nav a:hover {
-	color: #f7ce68;
+	color: #23c0b6;
 }
 
 
@@ -485,7 +485,7 @@ ul {
 }
 
 .contact-content p a:hover {
-	color: #f7ce68;
+	color: #23c0b6;
 } 
 
 .contact-content p a:visited {
