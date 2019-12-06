@@ -15,6 +15,8 @@
 		src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 		crossorigin="anonymous"></script>
+	<script src="scripts/script.js"></script>
+
 </head>
 
 <body>
@@ -59,25 +61,21 @@
 	</section>
 
 	<div class="back-to-top">
-			<nav class="top">
-				<ul>
-					<li><a href="#name"><i class="fas fa-chevron-circle-up"></i></a></li>
-				</ul>
-			</nav>
-		</div>	
+		<nav class="top">
+			<ul>
+				<li><a href="#name"><i id="up-arrow" class="fas fa-long-arrow-alt-up" style="display:none;"></i></a></li>
+			</ul>
+		</nav>
+	</div>	
 
-	<script>
-		$('.top').eq(0).click(function () {
-    			$('html, body').animate({
-        			scrollTop: $('.top-name').eq(0).offset().top
-    			}, 400);
-			});
-
-		$(document).ready(function (){
-			$(".fun").css("color", "#f7ce68")
+<script>
+	$('.top, .to-top').click(function () {
+			$('html, body').animate({
+				scrollTop: $('.top-name').eq(0).offset().top
+			}, 400);
 		});
 
-		//navigation
+	//navigation
 
 		var nav = $("#navigation")
   		var hamburger = $(".hamburger");

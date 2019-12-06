@@ -530,6 +530,16 @@ h5 {
 
 /*///////////////////////////////////////////// editorial page */
 
+.detail-shots h1 .subtitle {
+	font-size: 13pt;
+	line-height: 17pt;
+	margin: 0;
+	margin-right: 0;
+	padding-top: 10px;
+	font-family: 'Catamaran';
+	color: #000000;
+}
+
 .detail-shots h1 {
 	font-family: 'Catamaran';
 	font-size: 20pt;
@@ -956,9 +966,16 @@ h5 {
 		margin-bottom: 0;
 	}
 
+	.detail-shots p, .detail-shots h1 .subtitle {
+		font-size: 10.5pt;
+	}
+
+	.detail-shots h1 .subtitle {
+		line-height: 1.3em;
+	}
+
 	.detail-shots p {
 		margin-top: 30px;
-		font-size: 10.5pt;
 		line-height: 1.7em;
 	}
 
