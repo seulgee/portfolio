@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Seulgee Lee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+</head>
+
+<style>
+    ::selection {
+        background-color: #23c0b6;
+        color: black;
+    }
+
+    .under-construction {
+        margin: auto;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .bubble {
+        position: fixed;
+        width: 112.5px;
+        height: 115px;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-56.25px);
+        -webkit-transform: translateX(-56.25px);
+        -moz-transform: translateX(-56.25px);
+        -ms-transform: translateX(-56.25px);
+        text-align: center;
+    }
+
+    .dots {
+        position: fixed;
+        z-index: 40;
+        margin: auto;
+        padding-bottom: 8px;
+        font-size: 30px;
+        width: 112.5px;
+        line-height: 107px;
+        animation-name: blink;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+    }
+
+    .icon {
+        position: fixed;
+        margin: auto;
+        font-size: 100px;
+        color: #000000;
+    }
+
+    .message {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        line-height: 1.4em;
+        color: #000000;
+        padding-bottom: 20px;
+    }
+
+    p {
+        font-size: 13px;
+        color: #787878;
+        line-height: 1.6em;
+        padding: 0 23px 0 23px;
+    }
+
+    @keyframes blink {
+    0% {
+      opacity: .2;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: .2;
+    }
+}
+
+.dots span {
+    animation-name: blink;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.dots span:nth-child(2) {
+    animation-delay: .3s;
+}
+
+.dots span:nth-child(3) {
+    animation-delay: .6s;
+}
+
+a:link {
+    color: #787878;
+    text-decoration: none;
+    border-bottom: solid .5px;
+    transition: .3s;
+}
+
+a:visited {
+    color: #787878;
+}
+
+a:hover {
+    color: #000000;
+}
+
+@media only screen and (max-width:1023px){
+    .message {
+        margin-top: 40%;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .message {
+        margin-top: 85%;
+    }
+}
+
+</style>
+
+<body>
+    <div class="under-construction">
+        <div class="bubble">
+            <div class="dots"><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span></div>
+            <div class="icon"><i class="far fa-comment"></i></div>
+        </div>
+        <div class="message">
+            <h3>This site is currently under construction.<br>Please check back soon!</h3>
+            <p>Please contact Seulgee Lee at <span class="email"><a href="mailto:seulgee.work@gmail.com" target="_blank">seulgee.work@gmail.com</a></span> for any inquiries.</p>
+        </div>
+    </div>
+</body>
+
+</html>
