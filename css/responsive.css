@@ -1,0 +1,72 @@
+@media only screen and (max-width:1100px) {
+
+	h1 {
+		font-size: 50px;
+	}
+
+    .nav {
+        font-size: 20px;
+    }
+
+    #hello {
+        font-size: 65px;
+    }
+
+    #display-text {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .title-home {
+        font-size: 20px;
+    }
+
+    .text-project {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}	
+
+@media only screen and (max-width:900px) {
+
+    h4 {
+        font-size: 17px;
+    }
+
+    ul.nav {
+        display: none;
+    }
+
+    .nav-hamburger {
+        display: block;
+        font-size: 23px;
+        line-height: 100%;
+        padding: 16px;
+    }
+
+
+    .nav-default a.icon {
+        float: right;
+        display: block;
+    }
+
+    .image-home {
+        height: 300px;
+    }
+
+}
+
+@media only screen and (max-width:786px) {
+
+    .col-1, .col-4 {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width:414px) {
+
+    h1 {
+        font-size: 34px;
+    }
+}
