@@ -1,144 +1,72 @@
 <!DOCTYPE html>
 
 <head>
-	<title>Seulgee Lee</title>
+	<title>SEULGEE LEE</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta charset="utf-8">
+	<script type="text/javascript">
+	(function($){$.fn.easyTabs=function(option){var param=jQuery.extend({fadeSpeed:"fast",defaultContent:1,activeClass:'active'},option);$(this).each(function(){var thisId="#"+this.id;if(param.defaultContent==''){param.defaultContent=1;}
+	if(typeof param.defaultContent=="number")
+	{var defaultTab=$(thisId+" .tabs li:eq("+(param.defaultContent-1)+") a").attr('href').substr(1);}else{var defaultTab=param.defaultContent;}
+	$(thisId+" .tabs li a").each(function(){var tabToHide=$(this).attr('href').substr(1);$("#"+tabToHide).addClass('easytabs-tab-content');});hideAll();changeContent(defaultTab);function hideAll(){$(thisId+" .easytabs-tab-content").hide();}
+	function changeContent(tabId){hideAll();$(thisId+" .tabs li").removeClass(param.activeClass);$(thisId+" .tabs li a[href=#"+tabId+"]").closest('li').addClass(param.activeClass);if(param.fadeSpeed!="none")
+	{$(thisId+" #"+tabId).fadeIn(param.fadeSpeed);}else{$(thisId+" #"+tabId).show();}}
+	$(thisId+" .tabs li").click(function(){var tabId=$(this).find('a').attr('href').substr(1);changeContent(tabId);return false;});});}})(jQuery);
+	</script>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900|Open+Sans:300,300i,400,400i,600,600i,700,700i,800" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-	<script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
 </head>
 
-<style>
-    ::selection {
-        background-color: #23c0b6;
-        color: black;
-    }
-
-    .under-construction {
-        margin: auto;
-        height: 100vh;
-        text-align: center;
-        overflow: hidden;
-    }
-
-    .bubble {
-        position: fixed;
-        width: 112.5px;
-        height: 115px;
-        top: 30%;
-        left: 50%;
-        transform: translateX(-56.25px);
-        -webkit-transform: translateX(-56.25px);
-        -moz-transform: translateX(-56.25px);
-        -ms-transform: translateX(-56.25px);
-        text-align: center;
-    }
-
-    .dots {
-        position: fixed;
-        z-index: 40;
-        margin: auto;
-        padding-bottom: 8px;
-        font-size: 30px;
-        width: 112.5px;
-        line-height: 107px;
-        animation-name: blink;
-        animation-duration: 1.6s;
-        animation-iteration-count: infinite;
-        animation-fill-mode: both;
-    }
-
-    .icon {
-        position: fixed;
-        margin: auto;
-        font-size: 100px;
-        color: #000000;
-    }
-
-    .message {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        padding-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    h3 {
-	border-bottom: 0px;
-        line-height: 1.4em;
-        color: #000000;
-        padding-bottom: 20px;
-    }
-
-    p {
-        font-size: 13px;
-        color: #787878;
-        line-height: 1.6em;
-        padding: 0 23px 0 23px;
-    }
-
-    @keyframes blink {
-    0% {
-      opacity: .2;
-    }
-    20% {
-      opacity: 1;
-    }
-    100% {
-      opacity: .2;
-    }
-}
-
-.dots span {
-    animation-name: blink;
-    animation-duration: 1.6s;
-    animation-iteration-count: infinite;
-    animation-fill-mode: both;
-}
-
-.dots span:nth-child(2) {
-    animation-delay: .3s;
-}
-
-.dots span:nth-child(3) {
-    animation-delay: .6s;
-}
-
-a:link {
-    color: #787878;
-    text-decoration: none;
-    border-bottom: solid .5px;
-    transition: .3s;
-}
-
-a:visited {
-    color: #787878;
-}
-
-a:hover {
-    color: #000000;
-}
-
-</style>
-
 <body>
-    <div class="under-construction">
-        <div class="bubble">
-            <div class="dots"><span>&#9679;</span><span>&#9679;</span><span>&#9679;</span></div>
-            <div class="icon"><i class="far fa-comment"></i></div>
-        </div>
-        <div class="message">
-            <h3>This site is currently under construction.<br>Please check back soon!</h3>
-            <p>Please contact Seulgee Lee at <span class="email"><a href="mailto:seulgee.work@gmail.com" target="_blank">seulgee.work@gmail.com</a></span> for any inquiries.</p>
-        </div>
-    </div>
+
+    <section id="top">
+    	<div class="container">
+    		<div id="header" class="col-5">
+    			<h2 class="text-home"><span class="kafka">S</span><span class="manrope">eul</span><span class="kafka">g</span><span class="manrope">ee</span> <span class="kafka">L</span><span class="manrope">ee</span></h2>
+    		</div>
+    	</div>
+    </section>
+
+	<section id="middle">
+		<div class="container">
+			<div id="subheader" class="col-4">
+                <h1 class="text-display">We'll be back soon!</h1>
+                <p class="text-body">Need to get in touch? Please contact Seulgee Lee at <a href = "mailto: seulgee.work@gmail.com" target="_blank"><b>seulgee.work@gmail.com</b></a> for any inquiries.</p>
+            </div>
+            <div id="links">
+            	<p class="text-body">
+            		<a class="link-external" href="https://www.instagram.com/seulgitart.ink" target="_blank">
+            			instagram&#8594;
+            		</a>
+            		<a class="link-external" href="https://www.instagram.com/p/CoNQk5ULOlg/" target="_blank">
+            			booking policy&#8594;
+            		</a>
+            	</p>
+            </div>
+		</div>
+		
+		
+	</section>
+
+	<global-footer></global-footer>
+
+	<script>
+		//preloader
+		
+		$(window).on('load', function() {
+     		$('#loader-wrapper').fadeOut(300,'swing');
+  		});
+		
+		$(document).ready(function (){
+			$("#tattoo").css("color", "#23c0b6")
+		});
+
+	</script>
+
 </body>
 
 </html>
