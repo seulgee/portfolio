@@ -62,11 +62,26 @@
         width: 100%;
     }
 
+    .text-home {
+        text-align: center;
+        font-size: 34px;
+    }
+
+    .text-display {
+        font-size: 64px;
+    }
+
+    .text-body {
+        font-size: 16px;
+        line-height: 22px;
+        padding-right: 0;
+    }
+
 }
 
 @media only screen and (max-width:414px) {
 
-    h1 {
-        font-size: 34px;
-    }
+
+
+
 }

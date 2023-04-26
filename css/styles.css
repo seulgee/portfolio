@@ -1,7 +1,6 @@
 @font-face {
-	font-family: "Abide";
-	src: url("fonts/Abide/abide-webfont.woff") format("woff"),
-	url("fonts/Abide/abide-webfont.woff2") format("woff");
+	font-family: "Kafka";
+	src: url("fonts/Kafka/Kafka Display.otf") format("opentype")
 	}
 
 header {
@@ -10,11 +9,6 @@ header {
 
 footer {
     z-index: 100;
-}
-
-#top-anchor {
-    z-index: 0;
-    top:0;
 }
 
 ::selection {
@@ -32,9 +26,10 @@ footer {
 }
 
 #top {
-    width: 82%;
+    width: 90%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     position: -webkit-sticky;
     position: -ms-sticky;
     position: sticky;
@@ -73,21 +68,8 @@ footer {
     text-align: right;
 }
 
-.container {
-    width: 100%;
-    display: flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    padding-top: 20px;
-    padding-bottom: 24px;
-    flex-wrap: wrap;
-}
-
-.container-project {
-    flex-direction: column;
-    flex-direction: -webkit-column;
-    flex-direction: -ms-column;
-    padding-bottom: 50px;
+#links {
+    margin-top: 40px;
 }
 
 .col-2-5 {
@@ -127,28 +109,49 @@ footer {
 
 /*////////////////////////////////typography styling */
 
+.kafka {
+    font-family: "Kafka", sans-serif;
+}
+
+.manrope {
+    font-family: "Manrope", sans-serif;
+    font-weight: 200;
+}
+
 h1 {
-    font-family: "Abide", sans-serif;
-    font-size: 65px;
+    font-family: "Kafka", sans-serif;
+    font-size: 11em;
+    font-weight: normal;
     margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.text-display {
+    color: #43675A;
+    line-height: 80%;
+    margin-top: 68px;
+    margin-bottom: 68px;
+}
+
+.text-home {
+    color: #464646;
+}
+
+.text-body {
+    font-size: 24px;
+    line-height: 33px;
+    color: #464646;
+    font-weight: 200;
+    padding-right: 20%;
 }
 
 .header-case-change:hover {
     text-transform: lowercase;
-}
-
-#hello {
-    font-family: "Abide", sans-serif;
-    font-size: 100px;
-    margin-top: 34px;
-}
-
-.title-project {
-    font-family: "Manrope", sans-serif;
-    font-weight: 600;
-    font-size: 28px;
-    margin-top: 0px;
-    margin-bottom: 12px;
 }
 
 h4 {
@@ -160,21 +163,6 @@ h4 {
     margin-top: 0;
 }
 
-.title-home {
-    font-family: "Abide", sans-serif;
-    font-size: 34px;
-    line-height: 34px;
-    text-transform: uppercase;
-    z-index: 3;
-    position: absolute;
-    top: 133px;
-    right: 15%;
-    margin: 0;
-    text-align: center;
-    color: #ffffff;
-    
-}
-
 .subheader {
     padding-top: 2px;
 }
@@ -183,20 +171,18 @@ p {
     font-family: "Manrope", sans-serif;
 }
 
-#display-text {
-    font-size: 34px;
-    font-weight: 300;
-    line-height: 52px;
-}
-
 a:link {
-    color: #000000;
+    color: #464646;
     text-decoration: none;
 }
 
 a:visited {
-    color: #000000;
+    color: #464646;
     text-decoration: none;
+}
+
+a:hover {
+    color: #43675A;
 }
 
 nav {
@@ -215,7 +201,7 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: "Abide", sans-serif;
+    font-family: "Kafka", sans-serif;
     font-size: 28px;
   }
   
@@ -283,6 +269,10 @@ nav {
     color: #23c0b6;
 }
 
+.link-external {
+    padding-right: 20px;
+}
+
 .text-footer {
     font-size: 13px;
 }
@@ -290,120 +280,8 @@ nav {
 .to-top {
     text-align: right;
     float: right;
-    font-family: 'Abide', sans-serif;
+    font-family: 'Kafka', sans-serif;
     font-size: 17px;
     cursor: pointer;
 }
 
-/*////////////////////////////////preview images styling */
-
-.image-project {
-    width: 100%;
-}
-
-.image-home {
-    height: 500px;
-    width: 100%;
-    margin: auto;
-    background-image: url('../images-tattoo/image-1.jpg');
-    background-repeat: no-repeat;
-    background-repeat: -webkit-no-repeat;
-    background-repeat: -ms-no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-}
-
-#image-design {
-    position: relative;
-    height: 300px;
-    background-image: url('../projects/images/mockup_3.jpg');
-    background-repeat: no-repeat;
-    background-repeat: -webkit-no-repeat;
-    background-repeat: -ms-no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center center;
-    transition: .4s;
-    transition-timing-function: cubic-bezier(2,2,0,0);
-    cursor: pointer;
-}
-
-#image-tattoo {
-    position: relative;
-    height: 300px;
-    background-image: url('../images-tattoo/image-1.jpg');
-    background-repeat: no-repeat;
-    background-repeat: -webkit-no-repeat;
-    background-repeat: -ms-no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center center;
-    transition: .4s;
-    transition-timing-function: cubic-bezier(2,2,0,0);
-    cursor: pointer;
-}
-
-.image-overlay {
-    margin: auto;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: .4;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-}
-
-/*////////////////////////////////tattoo inquiry form styling */
-/* 
-.inquiry-tattoo {
-    display: block;
-    width: 100%;
-    padding-top: 24px;
-}
-
-.form-item {
-    width: 100%;
-    font-family: 'Manrope', sans-serif;
-    font-size: 13px;
-    line-height: 22px;
-}
-
-.form-section-one {
-    margin-bottom: 36px;
-}
-
-.text-form {
-    margin-top: 0;
-    margin-bottom: 24px;
-}
-
-.text-label {
-    text-transform: uppercase;
-}
-
-input, textarea {
-    margin-top: 8px;
-    padding: 12px 12px 12px 12px;
-    line-height: 22px;
-}
-
-textarea {
-    height: 120px;
-}
-
-.label-right {
-    padding-left: 8px;
-}
-
-.form-field {
-    width: 75%;
-    margin-top: 8px;
-    font-family: 'Manrope', sans-serif;
-}
-
-.required {
-    color: red;
-} */
